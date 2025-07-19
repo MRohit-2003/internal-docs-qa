@@ -1,0 +1,20 @@
+{
+  "python.defaultInterpreterPath": "./venv/bin/python",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.analysis.typeCheckingMode": "basic",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    ".env": true,
+    "uploads/*": true,
+    "*.log": true,
+    "faiss_index*": true,
+    "embeddings.pkl": true
+  },
+  "files.watcherExclude": {
+    "**/uploads/**": true,
+    "**/__pycache__/**": true
+  }
+}

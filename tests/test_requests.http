@@ -1,0 +1,19 @@
+### Health Check
+GET http://localhost:8000/health
+
+### Get Vector Stats
+GET http://localhost:8000/api/vector-stats
+
+### Upload Document
+POST http://localhost:8000/api/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="test.txt"
+Content-Type: text/plain
+
+This is a test document with some content for testing the upload functionality.
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### List Uploads
+GET http://localhost:8000/api/uploads
